@@ -5,23 +5,92 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu HTML</title>
-    <style>
-        h1 {
-            background: red;
-        }
-        #cabecalho-dois {
-            background: purple;
-            color: white;
-        }
-        .bold{
-            color: pink;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <h1 id="cabecalho-um" class="fundo-vermelho">Meu HTML</h1>
-    <h1 id="cabecalho-dois" class="fundo-vermelho">Meu HTML 2</h1>
-    <p1>Corpo do <b class="bold">texto</b>.</p1>
-    
+    <div class="pai">
+        Pai
+        <div class="filha outra qualquer">
+            Filha 1
+            <span>
+                <div class="filha outra qualquer">
+                    Filha da Filha
+                </div>
+            </span>
+        </div>
+        <div class="filha outra qualquer">
+            Filha 2
+            <div class="filha outra qualquer">
+                Filha da Filha
+            </div>
+        </div>
+    </div>
+    <div class="pai">
+        <h1>Lorem</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <h1>Lorem</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <h1>Lorem</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+    </div>
+    <div class="pai-dois">
+        <div class="dois">2</div>
+        <div class="um">1</div>
+        <div class="dois">2</div>
+        <div class="dois">2</div>
+        <div class="dois">2</div>
+        <div class="um">1</div>
+        <div class="dois">2</div>
+        <div class="dois">2</div>
+        <div class="dois">2</div>
+    </div>
+    <h1 class="heading" meu-atributo="valor">Lorem</h1>
+        <p class="p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Ab nemo illum aut natus magnam earum distinctio eius consequuntur odio aspernatur!
+             Magni perspiciatis itaque sunt assumenda culpa molestiae sapiente ab tempora.</p>
+        <p class="p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Ab nemo illum aut natus magnam earum distinctio eius consequuntur odio aspernatur!
+             Magni perspiciatis itaque sunt assumenda culpa molestiae sapiente ab tempora.</p>
+    <h1 class="heading">Lorem</h1>
+        <p class="p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Ab nemo illum aut natus magnam earum distinctio eius consequuntur odio aspernatur!
+             Magni perspiciatis itaque sunt assumenda culpa molestiae sapiente ab tempora.</p>
+        <p class="p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Ab nemo illum aut natus magnam earum distinctio eius consequuntur odio aspernatur!
+             Magni perspiciatis itaque sunt assumenda culpa molestiae sapiente ab tempora.</p>
+    <h1><a href="#">Link</a></h1>
+    <input type="text" disabled>
+    <input type="checkbox">
+    <p>Olá mundo!</p>
+    <div class="pai">
+        <ul class="lista">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 3</li>
+            <li>Item 3</li>
+            <li>Item 3</li>
+            <li>Item 3</li>
+            <li>Item 3</li>
+            <li>Item 3</li>
+            <li>Item 3</li>
+            <li>Item 3</li>
+            <li>Item 3</li>
+            <li>Item 3</li>
+            <li>Item 3</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+    <ul>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ul>
 </body>
 </html>

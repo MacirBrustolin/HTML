@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+div{
+    color: initial;
+    margin: 20px;
+}
+.pai > .filha > span > .filha {
+    color: red;
+}
+.pai h1+p{     /*Adjacent Selector (+)*/
+    color: red;
+}
+.pai p+h1{
+    color: yellow;
+}
+.pai-dois .um~.dois{ /* General Selector (~)*/
+    color: red;
+}
+[meu-atributo="valor"]{             /*(^=) -> Começa com um determinado valor "[meu-atributo="a"]" vai pegar indices que começam com a. */
+    color: red;                   /*($=) -> Termina com um determinado valor*/
+}                                   /*(*=) -> Contém um determinado valor*/
+
+.heading {
+    transition: all 300ms ease-in-out;
+}
+.heading:hover{
+    background: yellow;
+}
+a {
+    color: darkblue;
+}
+a:link{
+    color: pink;
+}
+a:visited{
+    color: firebrick;
+}
+a:hover{
+    background: darkslateblue;
+    color: white;
+    text-decoration: none;
+}
+a:active{
+    background: darkorange;
+    color: white;
+    text-decoration: none;
+}
+input:focus{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: 1px solid black;
+}
+input:disabled{
+    background: blueviolet;
+    cursor: not-allowed;
+}
+input:checked+p{
+    background: rgb(122, 50, 104);
+    color: white;
+}
+input:not(:checked)+p{
+    background: chartreuse;
+}
+.pai .lista li:last-child{
+    background: red;
+}
+ul li:nth-child(odd){
+    background: red;
+}
+ul li:nth-child(even){
+    background: blue;
+}
+ul li:nth-child(3n){
+    color: white;
+    font-size: large;
+}
+ul li::after{
+    content: '-';
+}
+.p1::first-letter{
+    font-size: 50px;
+    display: block;
+    float:left;
+    margin:0 10px 10px 0;
+}
+.p1::first-line{
+    background: red;
+}
